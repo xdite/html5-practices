@@ -67,7 +67,7 @@ end
 # end
 
 # Change the CSS directory
-# set :css_dir, "alternative_css_directory"
+set :css_dir, "/"
 
 # Change the JS directory
 # set :js_dir, "alternative_js_directory"
@@ -87,7 +87,7 @@ configure :build do
   # activate :cache_buster
   
   # Use relative URLs
-  # activate :relative_assets
+  #activate :relative_assets
   
   # Compress PNGs after build
   # First: gem install middleman-smusher
