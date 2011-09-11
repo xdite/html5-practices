@@ -30,6 +30,13 @@
 # Page command
 ###
 
+require "presentation"
+
+page "/" do 
+  @slide_content = get_slide_html
+end
+
+
 # Per-page layout changes:
 # 
 # With no layout
