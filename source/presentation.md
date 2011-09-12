@@ -323,3 +323,63 @@ Section 不是容器
 重要的內容在第 4 層
 
 ![image](/images/mix-all-mistakes.png)
+
+!SLIDE
+
+# Refacor
+殺了我比較快…
+
+* HTML 無法寫 Test
+* 我們必須 support IE 6,7,8,9
+* 四個站的 DOM 不一致
+
+!SLIDE
+
+# Refactor Steps
+工作只好吞下去。但苦主還是我。
+
+* 統一四站的 DOM / CSS - 2 weeks (by 澤清)
+* unHTML5 - 2 weeks ( by xdite )
+* 加上正確的 HTML5 語意 - 2 day ( by xdite )
+
+!SLIDE
+
+# 統一四站的 DOM / CSS
+區塊整理，大區塊規則必須一致
+
+* Rails partial
+* SCSS partial
+
+!SLIDE 
+
+# unHTML5
+
+當然沒那麼簡單…
+
+ * 使用 &lt;div class=&quot;section&quot;&gt; 取代 &lt;section&gt;
+ * 使用 &lt;div class=&quot;header&quot;&gt; 取代 &lt;header&gt;
+ * 使用 &lt;div class=&quot;nav&quot;&gt; 取代 &lt;nav&gt;
+ * 使用 &lt;div class=&quot;header&quot;&gt; 取代 &lt;header&gt;
+ * 使用 &lt;div class=&quot;article&quot;&gt; 取代 &lt;article&gt;
+
+
+!SLIDE
+
+# unHTML5 中遇到的問題
+
+* display:block; 的效果消失 
+* styling 原先是被下在語意標籤上 
+* 有時候不只需要改一層 DOM
+* 調換語意會大跑版
+* 正確的語意很醜…
+
+!SLIDE 
+
+# 加回正確的 HTML5 語意 
+
+
+* 文章 / 文章列表加回 &lt;article&gt;
+* 文章標題必加 &lt;header&gt;
+* 導覽列表加回 &lt;nav&gt;
+* 側欄區塊一律使用 &lt;aside&gt;
+* 次要地位的文章區塊，使用 &lt;aside&gt;
