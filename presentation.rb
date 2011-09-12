@@ -25,7 +25,7 @@ end
 
 def process_markdown
 
-  content = File.read("presentation.md")
+  content = File.read("source/presentation.md")
   
   lines = content.split("\n")
   
@@ -64,7 +64,7 @@ def process_markdown
 
     markdown_content += "<article"
     markdown_content += " id=\"#{id}\"" if id
-    markdown_content += " class=\"slide\" data-transition=\"#{transition}\">"
+    markdown_content += " class=\"slide #{content_classes.join(' ')} \" data-transition=\"#{transition}\">"
     if seq
       markdown_content += "<div class=\"#{content_classes.join(' ')}\" ref=\"#{seq.to_s}\">\n"
       seq += 1
