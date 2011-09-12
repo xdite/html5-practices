@@ -100,4 +100,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  maruku
   middleman (~> 2.0.8)
