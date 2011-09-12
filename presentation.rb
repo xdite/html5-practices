@@ -1,4 +1,6 @@
-require "maruku"
+require "rdiscount"
+
+Markdown = RDiscount
 
 # Borrow from showoff
 
@@ -69,7 +71,7 @@ def process_markdown
     else
       markdown_content += "<div class=\"#{content_classes.join(' ')}\" ref=\"\">\n"
     end
-    sl = Maruku.new(slide.text).to_html
+    sl = Markdown.new(slide.text).to_html
    # sl = update_image_paths(name, sl, static, pdf)
     markdown_content += sl
     markdown_content += "</div>\n"
