@@ -12,7 +12,7 @@ September 17, 2011
 
 鄭伊廷 ( xdite@about.me )
 
-Lead Developer / Manager of Techabng
+Lead Developer / Manager of Techbang
 
 !SLIDE
 
