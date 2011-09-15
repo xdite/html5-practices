@@ -1,6 +1,7 @@
 source "http://rubygems.org"
 
 gem "middleman", "~>2.0.8"
+gem 'guard-livereload'
 #gem "maruku"
 gem "rdiscount"
 

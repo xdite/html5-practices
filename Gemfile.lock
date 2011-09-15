@@ -102,6 +102,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  guard-livereload
   middleman (~> 2.0.8)
   rdiscount
   therubyracer-heroku (~> 0.8.0)

@@ -383,3 +383,200 @@ Section 不是容器
 * 導覽列表加回 &lt;nav&gt;
 * 側欄區塊一律使用 &lt;aside&gt;
 * 次要地位的文章區塊，使用 &lt;aside&gt;
+
+!SLIDE
+
+### Final Results （ 調整完的 T17 ）
+
+![image](/images/t17-result.jpg)
+
+!SLIDE
+
+# 似乎是地雷為什麼還要衝？
+HTML5 超多眉角
+
+!SLIDE
+
+# HTML4 不敷使用
+
+* p
+* strong
+* em
+* h1-h6
+
+!SLIDE
+
+### CMS 常見的 HTML 佈局
+
+<pre>
+&lt;div class=&quot;header&quot;&gt;
+  &lt;h1&gt; SITENAME &lt;/h1&gt;
+&lt;/div&gt;
+&lt;div class=&quot;wrapper&quot;&gt;
+  &lt;div class=&quot;article-header&quot;&gt;
+    &lt;h2&gt; POST TITLE &lt;/h2&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;social-link&quot;&gt;
+    SOCIAL LINKS HERE
+  &lt;/div&gt;
+
+  &lt;div class=&quot;article-content&quot;&gt;
+    # EDITOR's content here
+    &lt;h1&gt; First class heading &lt;/h1&gt;
+    &lt;p&gt; content here &lt;/p&gt;
+    &lt;h2&gt; Second class heading &lt;/h2&gt;
+    &lt;p&gt; content here &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+!SLIDE
+
+### CMS 常見的 HTML 佈局 (續)
+<pre>
+&lt;div class=&quot;sidebar&quot;&gt;
+  &lt;div class=&quot;section&quot;&gt;
+    &lt;h2&gt; Widget Title &lt;/h2&gt;
+    &lt;div class=&quot;widget-content&quot;&gt;
+      WIDGET CONTENT HERE
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+### 問題點：
+
+* 哪一段才是真正的文本？ wrapper / social-link / sidebar
+* 哪一個才是真正的標題？ 2 個 h1 / 3 個 h2
+
+!SLIDE
+
+# Search Engine：哩供蝦？
+
+!SLIDE
+
+# 主動幫搜尋引擎畫 <span class="red">重點</span>
+What HTML5 Semantic Tag do ?
+
+* article
+* section
+* aside
+* nav
+* header / footer
+
+!SLIDE
+
+### 改成這樣如何？
+
+<pre>
+# 省略...
+&lt;div class=&quot;wrapper&quot;&gt;
+  &lt;article&gt;
+  &lt;div class=&quot;article-header&quot;&gt;
+    &lt;header&gt;&lt;h2&gt; POST TITLE &lt;/h2&gt;&lt;/header&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;social-link&quot;&gt;
+    SOCIAL LINKS HERE
+  &lt;/div&gt;
+  &lt;div class=&quot;article-content&quot;&gt;
+    &lt;section&gt;
+    # EDITOR's content here
+    &lt;h1&gt; First class heading &lt;/h1&gt;
+    &lt;p&gt; content here &lt;/p&gt;
+    &lt;h2&gt; Second class heading &lt;/h2&gt;
+    &lt;p&gt; content here &lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
+  &lt;/article&gt;
+&lt;/div&gt;
+</pre>
+
+!SLIDE
+
+### 改成這樣如何？ (續)
+<pre>
+&lt;div class=&quot;sidebar&quot;&gt;
+  &lt;aside class=&quot;section&quot;&gt;
+    &lt;h2&gt; Widget Title &lt;/h2&gt;
+    &lt;div class=&quot;widget-content&quot;&gt;
+      WIDGET CONTENT HERE
+    &lt;/div&gt;
+  &lt;/aside&gt;
+&lt;/div&gt;
+
+</pre>
+
+ 重點一清二楚！
+
+!SLIDE
+
+# 如何開始著手設計？
+新手通常不知道如何挑選適當的 TAG
+
+!SLIDE
+
+# Design Steps
+
+* 請先設計普通的 Layout， NO semantic tags 
+* 為這份 Layout 畫重點 
+
+
+!SLIDE 
+
+# 警告：千萬不能做的事
+
+* 在語意 TAG 上，使用任何的 style
+* 一邊佈局一邊上語意
+
+<br>
+### EPIC FAIL : <span class="red">邊寫筆記邊畫重點</span>
+
+!SLIDE 
+
+# 撰寫語意 HTML5 需要的工具
+工欲善其事，必先利其器
+
+!SLIDE
+
+# 基本必備工具
+因為 IE 6,7,8 不支援
+
+* html5shiv
+* HTML5 Reset Stylesheet
+
+<div class="source">
+<ul>
+	<li>http://code.google.com/p/html5shiv/ </li>
+	<li>http://html5doctor.com/html-5-reset-stylesheet/ </li>
+</ul>
+</div>
+
+!SLIDE 
+
+###  建議使用工具
+
+* Chrome HTML5 Outliner
+
+![image](/images/html5-outliner.png)
+
+!SLIDE 
+
+### 畫重點的好幫手
+
+![image](/images/HTML5Doctor-sectioning-flowchart.png)
+
+<div class="source blue">
+http://html5doctor.com/happy-1st-birthday-us/
+</div>
+
+!SLIDE 
+
+# Thanks for listening 
+Q & A ?
+
+!SLIDE
+
+# We are hiring developers.
+
+mailto: jobs@techbang.com.tw
