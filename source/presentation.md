@@ -570,13 +570,28 @@ What HTML5 Semantic Tag do ?
 http://html5doctor.com/happy-1st-birthday-us/
 </div>
 
+!SLIDE
+
+
+# Reference 
+http://blog.xdite.net/?p=3071
+
 !SLIDE 
 
 # Thanks for listening 
 Q & A ?
 
 !SLIDE
+# 廣告
 
-# We are hiring developers.
+<br>
+
+### Techbang are hiring developers.
 
 mailto: jobs@techbang.com.tw
+
+<br>
+### I am selling books.
+
+http://bit.ly/xdite-book-1 # Rails 101 <br>
+http://bit.ly/xdite-book-3 # Essential Rails Patterns
