@@ -576,11 +576,6 @@ http://html5doctor.com/happy-1st-birthday-us/
 # Reference 
 http://blog.xdite.net/?p=3071
 
-!SLIDE 
-
-# Thanks for listening 
-Q & A ?
-
 !SLIDE
 # 廣告
 
@@ -595,3 +590,8 @@ mailto: jobs@techbang.com.tw
 
 http://bit.ly/xdite-book-1 # Rails 101 <br>
 http://bit.ly/xdite-book-3 # Essential Rails Patterns
+
+!SLIDE 
+
+# Thanks for listening 
+Q & A ?
